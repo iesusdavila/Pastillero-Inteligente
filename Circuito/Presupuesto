@@ -1,0 +1,15 @@
+﻿PRESUPUESTO PILL BOX G9-PST,,,,,,
+Name,Quantity,Component,,,Value Uni,Value Total
+"D2, D8",6,Red LED,,,"$0,10","$0,60"
+U1,1, Arduino Uno R3,,,$15 ,$15 
+"R3, R6, R7, R8, R9",5,1 kΩ Resistor,,,$0.15 ,$0.75 
+"D1, D6",6,White LED,,,"$0,10","$0,60"
+D5,1,Blue LED,,,"$0,10","$0,10"
+"D7, D3",6,Green LED,,,"$0,10","$0,60"
+"DIST1, DIST2, DIST3, DIST4, DIST5",5, Ultrasonic Distance Sensor,,,"$5,25",$26.25 
+"SERVO5, SERVO4, SERVO3, SERVO2, SERVO1",5,Positional Micro Servo,,,"$3,50",$17.50 
+SW1,1, DIP Switch SPST x 6,,,"$4,30","$4,30"
+D4,1,Yellow LED,,,"$0,10","$0,10"
+"R1, R2, R4",3,220 Ω Resistor,,,$0.15 ,$0.75 
+P1,1,"5 , 5  Power Supply",,,$5 ,$5 
+,,,,,TOTAL,"$71,55"
