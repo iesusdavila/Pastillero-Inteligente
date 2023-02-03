@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_letras"
+    tools:context=".EditarPastillero">
+
+    <ScrollView
+        android:layout_width="380dp"
+        android:layout_height="match_parent"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.272">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="345dp"
+                android:layout_height="65dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/logo_empresa" />
+
+            <TextView
+                android:id="@+id/teVNuevoPastillero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/editar_pastillero_TV"
+                android:textColor="@color/color_letras_principales"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/teVTextoAdvSecundario"
+                android:layout_width="340dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:gravity="center_horizontal"
+                android:text="@string/mensaje_adv_editar"
+                android:textAlignment="center"
+                android:textColor="@color/advertencias"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/teVNomPastill"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/nombre_pastillero_default"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTeNomPastillero"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:hint="@string/pastillero_nombre_default"
+                android:inputType="textPersonName"
+                android:maxLength="25"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/teVPrimCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Primera Caja"
+                android:textColor="@color/color_letras_principales"
+                android:textSize="21sp"
+                android:textStyle="bold|italic"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.16"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editTeNombres" />
+
+            <TextView
+                android:id="@+id/teVNomPrimCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/nombre_textview"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTeNomPrimCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/nombre_pastilla_default"
+                android:maxLength="11"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/teVCantPrimCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/cantidad_pastillas_textView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTeCantPrimCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/cantidad_pastillas_default"
+                android:maxLength="2"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/teVTiempoPrimCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/tiempo_pastilla_textView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTeTiempoPrimCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/tiempo_pastillas_default"
+                android:maxLength="2"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/teVSecCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Segunda Caja"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_letras_principales"
+                android:textSize="21sp"
+                android:textStyle="bold|italic"/>
+
+            <TextView
+                android:id="@+id/teVNomSecCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/nombre_textview"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTeNomSecCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/nombre_pastilla_default"
+                android:maxLength="11"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"/>
+
+            <TextView
+                android:id="@+id/teVCantSecCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/cantidad_pastillas_textView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTeCantSecCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/cantidad_pastillas_default"
+                android:maxLength="2"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/teVTiempoSecCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/tiempo_pastilla_textView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTeTiempoSecCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/tiempo_pastillas_default"
+                android:maxLength="2"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/teVTerCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Tercera Caja"
+                android:textColor="@color/color_letras_principales"
+                android:textSize="21sp"
+                android:textStyle="bold|italic"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/teVNomTerCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/nombre_textview"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTeNomTerCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/nombre_pastilla_default"
+                android:maxLength="11"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/teVCantTerCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/cantidad_pastillas_textView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTeCantTerCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/cantidad_pastillas_default"
+                android:maxLength="2"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/teVTiempoTerCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/tiempo_pastilla_textView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTeTiempoTerCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/tiempo_pastillas_default"
+                android:maxLength="2"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/teVCuarCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Cuarta Caja"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_letras_principales"
+                android:textSize="21sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/teVNomCuarCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/nombre_textview"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTeNomCuarCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/nombre_pastilla_default"
+                android:maxLength="11"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/teVCantCuarCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/cantidad_pastillas_textView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTeCantCuarCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/cantidad_pastillas_default"
+                android:maxLength="2"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/teVTiempoCuarCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/tiempo_pastilla_textView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTeTiempoCuarCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/tiempo_pastillas_default"
+                android:maxLength="2"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <View
+                android:layout_width="320dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@color/primary_color" />
+
+            <TextView
+                android:id="@+id/teVQuintaCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="Quinta Caja"
+                android:layout_gravity="center_horizontal"
+                android:textColor="@color/color_letras_principales"
+                android:textSize="21sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/teVNomQuintaCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/nombre_textview"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTeNomQuintaCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/nombre_pastilla_default"
+                android:maxLength="11"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/teVCantQuintaCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/cantidad_pastillas_textView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/editTeCantQuintaCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/cantidad_pastillas_default"
+                android:maxLength="2"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <TextView
+                android:id="@+id/teVTiempoQuintaCaja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/quicksand_medium"
+                android:text="@string/tiempo_pastilla_textView"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTeTiempoQuintaCaja"
+                android:layout_width="320dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/fondo_escritura"
+                android:ems="10"
+                android:hint="@string/tiempo_pastillas_default"
+                android:maxLength="2"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp" />
+
+            <Button
+                android:id="@+id/btnCrearNuevoPastill"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="50dp"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/boton_fondo"
+                android:fontFamily="@font/quicksand_medium"
+                android:inputType="textCapWords"
+                android:onClick="confirmar"
+                android:text="Crear Pastillero"
+                android:textColor="@color/white"
+                android:textIsSelectable="false"
+                android:textSize="18sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

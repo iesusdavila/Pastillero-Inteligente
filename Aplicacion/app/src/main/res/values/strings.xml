@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Pill Box</string>
+    <string name="nombre">Juan Villon</string>
+    <string name="correo">usuario@gmail.com</string>
+    <string name="fecha_nacimiento">16/04/2000</string>
+    <string name="contrasena">************</string>
+    <string name="telefono">0998785612</string>
+    <string name="correo_invalido">Ingrese un email valido</string>
+    <string name="contrasena_invalida">Ingrese una contrasena valida</string>
+    <string name="nuevo_pastillero_textView">Nuevo Pastillero</string>
+    <string name="nombre_pastillero_default">Nombre del Pastillero</string>
+    <string name="nombre_textview">Nombre</string>
+    <string name="nombre_pastilla_default">Analgan</string>
+    <string name="cantidad_pastillas_textView">Cantidad de pastillas</string>
+    <string name="cantidad_pastillas_default">Maximo 50 pastillas</string>
+    <string name="tiempo_pastilla_textView">Tiempo entre cada pastilla (horas)</string>
+    <string name="tiempo_pastillas_default">Ingreso en horas</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="pastillero_nombre_default">Pastillero de Iesus</string>
+    <string name="editar_pastillero_TV">Editar Pastillero</string>
+    <string name="mensaje_adv_editar">En el que caso que no desee cambiar algun campo lo puede dejar vacio. La informacion que se muestra de fondo corresponde a sus datos ingresados</string>
+    <string name="mensaje_adv_datos_estadisticos">Los datos presentados son referenciales al uso de la aplicacion por los usuarios, no son valores estadisticos a nivel mundial</string>
+
+</resources>

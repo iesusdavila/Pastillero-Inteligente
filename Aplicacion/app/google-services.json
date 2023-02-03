@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "882021331111",
+    "project_id": "pill-box-830ac",
+    "storage_bucket": "pill-box-830ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:882021331111:android:cd78a7925b9b747dfb2b82",
+        "android_client_info": {
+          "package_name": "com.example.proyectogrupo9"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "882021331111-8e5v1fnlgs0gvp3pqiao9eaj9lknulf5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDjSVs5C1JWdMqrfso0Wd3MZchkAzW8wNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "882021331111-8e5v1fnlgs0gvp3pqiao9eaj9lknulf5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
